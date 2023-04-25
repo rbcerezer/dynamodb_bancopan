@@ -1,14 +1,11 @@
-# dio-live-dynamodb
-Repositório para o live coding do dia 30/09/2021 sobre o Amazon DynamoDB
+# dynamodb Desafio de Projeto
+Repositório para o Desafiomde Projeto DynamoDB Dio - Banco Pan
 
 ### Serviço utilizado
   - Amazon DynamoDB
   - Amazon CLI para execução em linha de comando
 
-### Comandos para execução do experimento:
-
-
-- Criar uma tabela
+- Criando tabela
 
 ```
 aws dynamodb create-table \
@@ -23,7 +20,7 @@ aws dynamodb create-table \
         ReadCapacityUnits=10,WriteCapacityUnits=5
 ```
 
-- Inserir um item
+- Inserindo item
 
 ```
 aws dynamodb put-item \
@@ -31,7 +28,7 @@ aws dynamodb put-item \
     --item file://itemmusic.json \
 ```
 
-- Inserir múltiplos itens
+- Inserção múltipla (multiplos itens)
 
 ```
 aws dynamodb batch-write-item \
